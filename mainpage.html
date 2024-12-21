@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - KoolKids Social</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="icon" type="image/png" href="KoolKids.png"> <!-- Fixed type for favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1 class="logo">KoolKids</h1>
+        </div>
+        <div class="navbar-right">
+            <ul class="navbar-links"> <!-- Added class name for clarity -->
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-compass"></i> Explore</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar / Profile Section -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="profile-pic.png" alt="Your profile picture" class="profile-pic" width="120" height="120"> <!-- Added alt and dimensions -->
+                <h2 class="profile-name">Your Name</h2>
+                <p class="profile-handle">@yourhandle</p>
+                <button class="edit-profile-btn" aria-label="Edit your profile">Edit Profile</button> <!-- Added aria-label -->
+            </div>
+            <div class="menu">
+                <ul class="sidebar-links"> <!-- Added class name for clarity -->
+                    <li><a href="#">Your Posts</a></li>
+                    <li><a href="#">Your Friends</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Feed Section -->
+        <section class="feed">
+            <div class="create-post">
+                <textarea placeholder="What's on your mind?" class="create-post-input" maxlength="280"></textarea> <!-- Added maxlength -->
+                <button class="post-btn" aria-label="Post your content">Post</button> <!-- Added aria-label -->
+            </div>
+
+            <div class="feed-grid">
+                <div class="post-card">
+                    <img src="post-image1.jpg" alt="A beautiful landscape photo"> <!-- More descriptive alt text -->
+                </div>
+                <div class="post-card">
+                    <img src="post-image2.jpg" alt="A city skyline photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="suggestions">
+                <h3>Friend Suggestions</h3>
+                <ul>
+                    <!-- Example list items (can be dynamically filled) -->
+                    <li><a href="#">Friend 1</a></li>
+                    <li><a href="#">Friend 2</a></li>
+                    <li><a href="#">Friend 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="mainpage.js"></script>
+</body>
+</html>
